@@ -380,13 +380,13 @@ daylength_stack &lt;-<span class="st"> </span><span class="kw">daylengthFUN</spa
 ## 4 Fulanus_beltranus   7     4 2020    0     12      0 8.7428 24.2724
 ## 5 Fulanus_beltranus   7     4 2020    0     16      0 8.3892 24.2724
 ## 6 Fulanus_beltranus   7     4 2020    0     20      0 8.3892 24.2724
-##        Lat microhabitat    temp
-## 1 -2.12569   shade_tree 10.0740
-## 2 -2.12569   shade_tree 10.1908
-## 3 -2.12569   shade_tree 10.2292
-## 4 -2.12569   shade_tree 10.3076
-## 5 -2.12569   shade_tree 10.3460
-## 6 -2.12569   shade_tree 10.2692</code></pre>
+##        Lat microhabitat    temp HA
+## 1 -2.12569   shade_tree 10.0740  0
+## 2 -2.12569   shade_tree 10.1908  0
+## 3 -2.12569   shade_tree 10.2292  0
+## 4 -2.12569   shade_tree 10.3076  0
+## 5 -2.12569   shade_tree 10.3460  0
+## 6 -2.12569   shade_tree 10.2692  0</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Summarise microclimate table by day</span>
 <span class="co">#make this into a function</span>
 
@@ -415,25 +415,319 @@ microclimate_by_day &lt;-<span class="st"> </span>
 
 <span class="kw">modpar</span>(<span class="dt">x =</span> microclimate_by_day$temp_air_avg, 
        <span class="dt">y =</span> microclimate_by_day$HA, 
-       <span class="dt">pn.options =</span> <span class="st">&quot;G_options&quot;</span>)
-
-<span class="kw">change.pnparameters</span>(<span class="dt">M =</span> <span class="fl">0.1</span>, <span class="dt">pn.options =</span> <span class="st">&quot;G_options&quot;</span>)
-
-<span class="kw">modpar</span>(<span class="dt">x =</span> microclimate_by_day$temp_air_avg, 
+       <span class="dt">pn.options =</span> <span class="st">&quot;G_options&quot;</span>)</code></pre></div>
+<pre><code>## [1] modpar will attempt to parameterize your data using the following sequential procedures:
+## [1]   (1) Extract parameter estimates for 8-parameter double-Richards curve in nls
+## [1]   (2) Use getInitial to retrieve parameter estimates for 8-parameter double-Richards curve
+## [1]   (3) Extract parameter estimates for 4-parameter Richards curve in 
+## [1]   (4) Use getInitial to retrieve parameter estimates for 4-parameter Richards curve
+## [1] if any approaches are successful, modpar will return these and terminate at that stage
+## [1]  
+## [1] (1) Status of 8-parameter double-Richards curve fit in nls:
+## [1] ....8 parameter nls fit failed
+## [1] (2) Status of 8-parameter double-Richards getInitial call
+## [1] ....8-parameter getInitial successful</code></pre>
+<pre><code>## $Asym
+## [1] 7.884232
+## 
+## $K
+## [1] 0.6437508
+## 
+## $Infl
+## [1] 12.85268
+## 
+## $M
+## [1] 3.495083
+## 
+## $RAsym
+## [1] -4.697207
+## 
+## $Rk
+## [1] 0.8908401
+## 
+## $Ri
+## [1] 14.62977
+## 
+## $RM
+## [1] 0.983874</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">change.pnparameters</span>(<span class="dt">M =</span> <span class="fl">0.1</span>, <span class="dt">pn.options =</span> <span class="st">&quot;G_options&quot;</span>)</code></pre></div>
+<pre><code>## $Asym
+## [1] 7.884232
+## 
+## $K
+## [1] 0.6437508
+## 
+## $Infl
+## [1] 12.85268
+## 
+## $M
+## [1] 0.1
+## 
+## $RAsym
+## [1] -4.697207
+## 
+## $Rk
+## [1] 0.8908401
+## 
+## $Ri
+## [1] 14.62977
+## 
+## $RM
+## [1] 0.983874
+## 
+## $first.y
+## [1] NA
+## 
+## $x.at.first.y
+## [1] NA
+## 
+## $last.y
+## [1] NA
+## 
+## $x.at.last.y
+## [1] NA
+## 
+## $twocomponent.x
+## [1] NA
+## 
+## $verbose
+## [1] FALSE
+## 
+## $force4par
+## [1] FALSE
+## 
+## $force.nonmonotonic
+## [1] FALSE
+## 
+## $Amin
+## [1] 3.942116
+## 
+## $Amax
+## [1] 27.59481
+## 
+## $Kmin
+## [1] 0.3218754
+## 
+## $Kmax
+## [1] 0.9656262
+## 
+## $Imin
+## [1] -6.426339
+## 
+## $Imax
+## [1] 44.98437
+## 
+## $Mmin
+## [1] -0.1
+## 
+## $Mmax
+## [1] 0.3
+## 
+## $RAmin
+## [1] -7.04581
+## 
+## $RAmax
+## [1] 7.04581
+## 
+## $Rkmin
+## [1] 0.4454201
+## 
+## $Rkmax
+## [1] 1.33626
+## 
+## $Rimin
+## [1] 7.314885
+## 
+## $Rimax
+## [1] 32.91698
+## 
+## $RMmin
+## [1] NA
+## 
+## $RMmax
+## [1] 2.951622
+## 
+## $taper.ends
+## [1] 0.45</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">modpar</span>(<span class="dt">x =</span> microclimate_by_day$temp_air_avg, 
        <span class="dt">y =</span> microclimate_by_day$HA, 
-       <span class="dt">pn.options =</span> <span class="st">&quot;VB_options&quot;</span>)
-
-<span class="kw">modpar</span>(<span class="dt">x =</span> microclimate_by_day$temp_air_avg, 
+       <span class="dt">pn.options =</span> <span class="st">&quot;VB_options&quot;</span>)</code></pre></div>
+<pre><code>## [1] modpar will attempt to parameterize your data using the following sequential procedures:
+## [1]   (1) Extract parameter estimates for 8-parameter double-Richards curve in nls
+## [1]   (2) Use getInitial to retrieve parameter estimates for 8-parameter double-Richards curve
+## [1]   (3) Extract parameter estimates for 4-parameter Richards curve in 
+## [1]   (4) Use getInitial to retrieve parameter estimates for 4-parameter Richards curve
+## [1] if any approaches are successful, modpar will return these and terminate at that stage
+## [1]  
+## [1] (1) Status of 8-parameter double-Richards curve fit in nls:
+## [1] ....8 parameter nls fit failed
+## [1] (2) Status of 8-parameter double-Richards getInitial call
+## [1] ....8-parameter getInitial successful</code></pre>
+<pre><code>## $Asym
+## [1] 7.884232
+## 
+## $K
+## [1] 0.6437508
+## 
+## $Infl
+## [1] 12.85268
+## 
+## $M
+## [1] 3.495083
+## 
+## $RAsym
+## [1] -4.697207
+## 
+## $Rk
+## [1] 0.8908401
+## 
+## $Ri
+## [1] 14.62977
+## 
+## $RM
+## [1] 0.983874</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">modpar</span>(<span class="dt">x =</span> microclimate_by_day$temp_air_avg, 
        <span class="dt">y =</span> microclimate_by_day$HA, 
-       <span class="dt">pn.options =</span> <span class="st">&quot;R_options&quot;</span>)
-
-<span class="kw">change.pnparameters</span>(<span class="dt">M =</span> -<span class="fl">0.3</span>, <span class="dt">pn.options =</span> <span class="st">&quot;VB_options&quot;</span>)
-
-HAlogistic &lt;-<span class="st"> </span><span class="kw">nls</span>(HA ~<span class="st"> </span><span class="kw">SSlogis</span>(temp_air_avg, Asym, xmid, scal), <span class="dt">data =</span> microclimate_by_day)
+       <span class="dt">pn.options =</span> <span class="st">&quot;R_options&quot;</span>)</code></pre></div>
+<pre><code>## [1] modpar will attempt to parameterize your data using the following sequential procedures:
+## [1]   (1) Extract parameter estimates for 8-parameter double-Richards curve in nls
+## [1]   (2) Use getInitial to retrieve parameter estimates for 8-parameter double-Richards curve
+## [1]   (3) Extract parameter estimates for 4-parameter Richards curve in 
+## [1]   (4) Use getInitial to retrieve parameter estimates for 4-parameter Richards curve
+## [1] if any approaches are successful, modpar will return these and terminate at that stage
+## [1]  
+## [1] (1) Status of 8-parameter double-Richards curve fit in nls:
+## [1] ....8 parameter nls fit failed
+## [1] (2) Status of 8-parameter double-Richards getInitial call
+## [1] ....8-parameter getInitial successful</code></pre>
+<pre><code>## $Asym
+## [1] 7.884232
+## 
+## $K
+## [1] 0.6437508
+## 
+## $Infl
+## [1] 12.85268
+## 
+## $M
+## [1] 3.495083
+## 
+## $RAsym
+## [1] -4.697207
+## 
+## $Rk
+## [1] 0.8908401
+## 
+## $Ri
+## [1] 14.62977
+## 
+## $RM
+## [1] 0.983874</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">change.pnparameters</span>(<span class="dt">M =</span> -<span class="fl">0.3</span>, <span class="dt">pn.options =</span> <span class="st">&quot;VB_options&quot;</span>)</code></pre></div>
+<pre><code>## $Asym
+## [1] 7.884232
+## 
+## $K
+## [1] 0.6437508
+## 
+## $Infl
+## [1] 12.85268
+## 
+## $M
+## [1] -0.3
+## 
+## $RAsym
+## [1] -4.697207
+## 
+## $Rk
+## [1] 0.8908401
+## 
+## $Ri
+## [1] 14.62977
+## 
+## $RM
+## [1] 0.983874
+## 
+## $first.y
+## [1] NA
+## 
+## $x.at.first.y
+## [1] NA
+## 
+## $last.y
+## [1] NA
+## 
+## $x.at.last.y
+## [1] NA
+## 
+## $twocomponent.x
+## [1] NA
+## 
+## $verbose
+## [1] FALSE
+## 
+## $force4par
+## [1] FALSE
+## 
+## $force.nonmonotonic
+## [1] FALSE
+## 
+## $Amin
+## [1] 3.942116
+## 
+## $Amax
+## [1] 27.59481
+## 
+## $Kmin
+## [1] 0.3218754
+## 
+## $Kmax
+## [1] 0.9656262
+## 
+## $Imin
+## [1] -6.426339
+## 
+## $Imax
+## [1] 44.98437
+## 
+## $Mmin
+## [1] -0.9
+## 
+## $Mmax
+## [1] 0.3
+## 
+## $RAmin
+## [1] -7.04581
+## 
+## $RAmax
+## [1] 7.04581
+## 
+## $Rkmin
+## [1] 0.4454201
+## 
+## $Rkmax
+## [1] 1.33626
+## 
+## $Rimin
+## [1] 7.314885
+## 
+## $Rimax
+## [1] 32.91698
+## 
+## $RMmin
+## [1] NA
+## 
+## $RMmax
+## [1] 2.951622
+## 
+## $taper.ends
+## [1] 0.45</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">HAlogistic &lt;-<span class="st"> </span><span class="kw">nls</span>(HA ~<span class="st"> </span><span class="kw">SSlogis</span>(temp_air_avg, Asym, xmid, scal), <span class="dt">data =</span> microclimate_by_day)
 HAGompertz &lt;-<span class="st"> </span><span class="kw">nls</span>(HA ~<span class="st"> </span><span class="kw">SSposnegRichards</span>(temp_air_avg, Asym, K, Infl, <span class="dt">modno =</span> <span class="dv">32</span>, <span class="dt">pn.options =</span> <span class="st">&quot;G_options&quot;</span>), <span class="dt">data =</span> microclimate_by_day)
 HAVonBertalannfy &lt;-<span class="st"> </span><span class="kw">nls</span>(HA ~<span class="st"> </span><span class="kw">SSposnegRichards</span>(temp_air_avg, Asym, K, Infl, <span class="dt">modno =</span> <span class="dv">32</span>, <span class="dt">pn.options =</span> <span class="st">&quot;VB_options&quot;</span>), <span class="dt">data =</span> microclimate_by_day)
-HARichards &lt;-<span class="st"> </span><span class="kw">nls</span>(HA ~<span class="st"> </span><span class="kw">SSposnegRichards</span>(temp_air_avg, Asym, K, Infl, M, <span class="dt">modno =</span> <span class="dv">12</span>, <span class="dt">pn.options =</span> <span class="st">&quot;R_options&quot;</span>), <span class="dt">data =</span> microclimate_by_day)</code></pre></div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"> HA_curve &lt;-<span class="st"> </span>
+HARichards &lt;-<span class="st"> </span><span class="kw">nls</span>(HA ~<span class="st"> </span><span class="kw">SSposnegRichards</span>(temp_air_avg, Asym, K, Infl, M, <span class="dt">modno =</span> <span class="dv">12</span>, <span class="dt">pn.options =</span> <span class="st">&quot;R_options&quot;</span>), <span class="dt">data =</span> microclimate_by_day)
+
+ HA_curve &lt;-<span class="st"> </span>
 <span class="st">   </span><span class="kw">fit_curves</span>(<span class="kw">list</span>(<span class="dt">logistic =</span> HAlogistic, 
                    <span class="dt">Gompertz =</span> HAGompertz,
                    <span class="dt">Von_Bertalannfy =</span> HAVonBertalannfy,
@@ -580,8 +874,8 @@ FulanusDistribution_clean &lt;-<span class="st"> </span>
 </div>
 <div id="sdm" class="section level2">
 <h2>SDM</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="st">&quot;That's all for now&quot;</span>)</code></pre></div>
-<pre><code>## [1] &quot;That's all for now&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="st">&quot;That's all&quot;</span>)</code></pre></div>
+<pre><code>## [1] &quot;That's all&quot;</code></pre>
 </div>
 </div>
 
