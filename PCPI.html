@@ -255,140 +255,15 @@ refereing to future threats. It also allows the modulation of threats by
 <h1>Set up</h1>
 <p>The package is currently hosted in my GitHub repository, from which you can install it with the following command:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"gabrielhoc/PCPI"</span>)</span></code></pre></div>
-<pre><code>## Downloading GitHub repo gabrielhoc/PCPI@HEAD</code></pre>
-<pre><code>## stringi    (1.7.5  -&gt; 1.7.6  ) [CRAN]
-## magrittr   (2.0.1  -&gt; 2.0.2  ) [CRAN]
-## Rcpp       (1.0.7  -&gt; 1.0.8.3) [CRAN]
-## digest     (0.6.28 -&gt; 0.6.29 ) [CRAN]
-## fansi      (0.5.0  -&gt; 1.0.2  ) [CRAN]
-## tibble     (3.1.5  -&gt; 3.1.6  ) [CRAN]
-## gower      (0.2.2  -&gt; 1.0.0  ) [CRAN]
-## dplyr      (1.0.7  -&gt; 1.0.8  ) [CRAN]
-## colorspace (2.0-2  -&gt; 2.0-3  ) [CRAN]
-## caret      (6.0-89 -&gt; 6.0-91 ) [CRAN]</code></pre>
-<pre><code>## Installing 10 packages: stringi, magrittr, Rcpp, digest, fansi, tibble, gower, dplyr, colorspace, caret</code></pre>
-<pre><code>## Installing packages into 'C:/Users/gabri/Documents/R/win-library/4.1'
-## (as 'lib' is unspecified)</code></pre>
-<pre><code>## package 'stringi' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'stringi'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\stringi\libs\icudt69l.dat to
-## C:\Users\gabri\Documents\R\win-library\4.1\stringi\libs\icudt69l.dat: Invalid
-## argument</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\stringi\libs\x64\stringi.dll
-## to C:\Users\gabri\Documents\R\win-library\4.1\stringi\libs\x64\stringi.dll:
-## Permission denied</code></pre>
-<pre><code>## Warning: restored 'stringi'</code></pre>
-<pre><code>## package 'magrittr' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'magrittr'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\magrittr\libs\x64\magrittr.dll
-## to C:\Users\gabri\Documents\R\win-library\4.1\magrittr\libs\x64\magrittr.dll:
-## Permission denied</code></pre>
-<pre><code>## Warning: restored 'magrittr'</code></pre>
-<pre><code>## package 'Rcpp' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'Rcpp'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\Rcpp\libs\x64\Rcpp.dll to C:
-## \Users\gabri\Documents\R\win-library\4.1\Rcpp\libs\x64\Rcpp.dll: Permission
-## denied</code></pre>
-<pre><code>## Warning: restored 'Rcpp'</code></pre>
-<pre><code>## package 'digest' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'digest'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\digest\libs\x64\digest.dll to C:
-## \Users\gabri\Documents\R\win-library\4.1\digest\libs\x64\digest.dll: Permission
-## denied</code></pre>
-<pre><code>## Warning: restored 'digest'</code></pre>
-<pre><code>## package 'fansi' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'fansi'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\fansi\libs\x64\fansi.dll to C:
-## \Users\gabri\Documents\R\win-library\4.1\fansi\libs\x64\fansi.dll: Permission
-## denied</code></pre>
-<pre><code>## Warning: restored 'fansi'</code></pre>
-<pre><code>## package 'tibble' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'tibble'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\tibble\libs\x64\tibble.dll to C:
-## \Users\gabri\Documents\R\win-library\4.1\tibble\libs\x64\tibble.dll: Permission
-## denied</code></pre>
-<pre><code>## Warning: restored 'tibble'</code></pre>
-<pre><code>## package 'gower' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'gower'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\gower\libs\x64\gower.dll to C:
-## \Users\gabri\Documents\R\win-library\4.1\gower\libs\x64\gower.dll: Permission
-## denied</code></pre>
-<pre><code>## Warning: restored 'gower'</code></pre>
-<pre><code>## package 'dplyr' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'dplyr'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\dplyr\libs\x64\dplyr.dll to C:
-## \Users\gabri\Documents\R\win-library\4.1\dplyr\libs\x64\dplyr.dll: Permission
-## denied</code></pre>
-<pre><code>## Warning: restored 'dplyr'</code></pre>
-<pre><code>## package 'colorspace' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'colorspace'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive =
-## TRUE): problem copying C:\Users\gabri\Documents\R\win-
-## library\4.1\00LOCK\colorspace\libs\x64\colorspace.dll to C:
-## \Users\gabri\Documents\R\win-library\4.1\colorspace\libs\x64\colorspace.dll:
-## Permission denied</code></pre>
-<pre><code>## Warning: restored 'colorspace'</code></pre>
-<pre><code>## package 'caret' successfully unpacked and MD5 sums checked</code></pre>
-<pre><code>## Warning: cannot remove prior installation of package 'caret'</code></pre>
-<pre><code>## Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-## \Users\gabri\Documents\R\win-library\4.1\00LOCK\caret\libs\x64\caret.dll to C:
-## \Users\gabri\Documents\R\win-library\4.1\caret\libs\x64\caret.dll: Permission
-## denied</code></pre>
-<pre><code>## Warning: restored 'caret'</code></pre>
-<pre><code>## 
-## The downloaded binary packages are in
-##  C:\Users\gabri\AppData\Local\Temp\RtmpuKst2W\downloaded_packages
-##   
-  
-  
-v  checking for file 'C:\Users\gabri\AppData\Local\Temp\RtmpuKst2W\remotes47dc17a4210c\gabrielhoc-PCPI-ab77495/DESCRIPTION' (521ms)
-## 
-  
-  
-  
--  preparing 'PCPI':
-##    checking DESCRIPTION meta-information ...
-  
-   checking DESCRIPTION meta-information ... 
-  
-v  checking DESCRIPTION meta-information
-## 
-  
-  
-  
--  checking for LF line-endings in source and make files and shell scripts
-## 
-  
--  checking for empty or unneeded directories
-## 
-  
-  
-  
--  building 'PCPI_0.1.0.tar.gz'
-## 
-  
-   
-## </code></pre>
-<pre><code>## Installing package into 'C:/Users/gabri/Documents/R/win-library/4.1'
-## (as 'lib' is unspecified)</code></pre>
 <p>Now let’s load ‘PCPI’ and two other useful packages, ‘magrittr’ for piping commands and ‘ggplot2’ for making graphs.</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(PCPI)</span>
-<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
-<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(PCPI)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
 <p>‘PCPI’ includes a dataset with data on threat correlates for 10851 
 global reptile species, obtained from the Global Assessment of Reptile 
 Distributions (GARD, ref). You can access it with the command below:</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"reptile_df"</span>)</span>
-<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_df)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"reptile_df"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_df)</span></code></pre></div>
 <pre><code>##                      sp iucn_cat     mass insular range_area human_footprint
 ## 1 Ablepharus bivittatus       LC 4.365158       0 1124272.16        26.35587
 ## 2     Ablepharus budaki       LC 1.995262       0  121183.37        37.27862
@@ -414,14 +289,14 @@ let’s use the last three variables as threat correlates to calculate our
  index. Note that range area itself is negatively correlated with 
 threat, so we must invert this variable, so it is positively correlated 
 with threat like the other ones.</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate inverse range area</span></span>
-<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>reptile_df<span class="sc">$</span>inv_range_area <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">/</span>(reptile_df<span class="sc">$</span>range_area)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate inverse range area</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>reptile_df<span class="sc">$</span>inv_range_area <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">/</span>(reptile_df<span class="sc">$</span>range_area)</span></code></pre></div>
 <p>Let’s check which columns do we want</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(reptile_df)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(reptile_df)</span></code></pre></div>
 <pre><code>## [1] "sp"              "iucn_cat"        "mass"            "insular"        
 ## [5] "range_area"      "human_footprint" "pop_dens"        "inv_range_area"</code></pre>
 <p>We want columns 6, 7 and 8 (human_footprint, population density and inverse range area)</p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>var_out <span class="ot">&lt;-</span> reptile_df[<span class="dv">6</span><span class="sc">:</span><span class="dv">8</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>var_out <span class="ot">&lt;-</span> reptile_df[<span class="dv">6</span><span class="sc">:</span><span class="dv">8</span>]</span></code></pre></div>
 </div>
 <div id="calculating-pcpi" class="section level1">
 <h1>Calculating PCPI</h1>
@@ -429,11 +304,11 @@ with threat like the other ones.</p>
  of threat, and then scaling the result from 0 to 1 again (include 
 formula). To do so, simply supply the species names (argument ‘sp’) and 
 threat correlates (argument ‘var_out’) to the function ‘pcpi’.</p>
-<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>reptile_pcpi <span class="ot">&lt;-</span></span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>reptile_pcpi <span class="ot">&lt;-</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out)</span></code></pre></div>
 <p>We can now look at the top 6 threatened species according to PCPI:</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi[<span class="fu">order</span>(reptile_pcpi<span class="sc">$</span>rank),])</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi[<span class="fu">order</span>(reptile_pcpi<span class="sc">$</span>rank),])</span></code></pre></div>
 <pre><code>##                                 sp      pcpi rank
 ## 3216      Cyrtodactylus jarakensis 1.0000000    1
 ## 827           Anolis kahouannensis 0.8315764    2
@@ -447,8 +322,8 @@ most important result is the ranking of species, which allow them to be
 prioritized for conservation in relation to each other. We can use a 
 simple boxplot to see how similar our results are to the IUCN threat 
 categorization:</p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
-<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <p><img src="data:image/png;base64,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"><!-- --></p>
 <p>It seems median PCPI rank correlates nicely with the IUCN categories,
  and also shows that species classified as Data Deficient (“DD”) by IUCN
@@ -465,15 +340,15 @@ moderate the effects of human_footprint, population density and inverse
 range area. This way, we are assuming that insular endemics and larger 
 species suffer more from our selected threats. First, let’s subset our 
 selected variables:</p>
-<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># insularity and body mass are in columns 3 and 4</span></span>
-<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>var_in <span class="ot">&lt;-</span> reptile_df[<span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># insularity and body mass are in columns 3 and 4</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>var_in <span class="ot">&lt;-</span> reptile_df[<span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>]</span></code></pre></div>
 <p>Now, we simply supply those to argument ‘var_in’:</p>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>reptile_pcpi_in <span class="ot">&lt;-</span></span>
-<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
-<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out,</span>
-<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_in =</span> var_in)</span>
-<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi_in[<span class="fu">order</span>(reptile_pcpi_in<span class="sc">$</span>rank),])</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>reptile_pcpi_in <span class="ot">&lt;-</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out,</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_in =</span> var_in)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi_in[<span class="fu">order</span>(reptile_pcpi_in<span class="sc">$</span>rank),])</span></code></pre></div>
 <pre><code>##                             sp      pcpi rank
 ## 2151        Casarea dussumieri 1.0000000    1
 ## 1715        Bothrops insularis 0.8116632    2
@@ -484,8 +359,8 @@ selected variables:</p>
 <p>There were two additions to the rank, ‘Casarea dussumieri’ and 
 ‘Bothrops insularis’, both insular species, which are now in the first 
 positions.</p>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi_in<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
-<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi_in<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <p><img src="data:image/png;base64,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"><!-- --></p>
 <p>The overall distribution of PCPI ranks relative to IUCN categories did not change much, with only a minor increase in variation.</p>
 </div>
@@ -499,21 +374,21 @@ different threats might have. Let’s assume, for example, that population
 extinction risk, that inverse range area has 2 times the impact of 
 population density. We create a corresponding vector of weights and 
 supply those to the argument ‘weight_out’ in function pcpi:</p>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># we must check the order of the variables in our data frame to correctly assign their weights</span></span>
-<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(var_out)</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># we must check the order of the variables in our data frame to correctly assign their weights</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(var_out)</span></code></pre></div>
 <pre><code>## [1] "human_footprint" "pop_dens"        "inv_range_area"</code></pre>
-<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creat weights</span></span>
-<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>weight_out <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">3</span>)</span>
-<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Run function</span></span>
-<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>reptile_pcpi_weights <span class="ot">&lt;-</span></span>
-<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
-<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out,</span>
-<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_in =</span> var_in,</span>
-<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">weight_out =</span> weight_out)</span>
-<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the top ranking</span></span>
-<span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi_weights[<span class="fu">order</span>(reptile_pcpi_weights<span class="sc">$</span>rank),])</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creat weights</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>weight_out <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">3</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Run function</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>reptile_pcpi_weights <span class="ot">&lt;-</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out,</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_in =</span> var_in,</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">weight_out =</span> weight_out)</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the top ranking</span></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi_weights[<span class="fu">order</span>(reptile_pcpi_weights<span class="sc">$</span>rank),])</span></code></pre></div>
 <pre><code>##                              sp       pcpi rank
 ## 2151         Casarea dussumieri 1.00000000    1
 ## 1715         Bothrops insularis 0.15184900    2
@@ -524,8 +399,8 @@ supply those to the argument ‘weight_out’ in function pcpi:</p>
 <p>The top positions of the rank did not change much compared to the 
 last version, but two new species were added to positions 5 and 6 
 (‘Dendrelaphis hollinrakei’ and ‘Tytthoscincus sibuensis’)</p>
-<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi_weights<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
-<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi_weights<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <p><img src="data:image/png;base64,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"><!-- --></p>
 <p>Again, the overall distribution did not change much. Finally, we can 
 also apply weights to the interactions between the interacting variables
@@ -534,13 +409,13 @@ also apply weights to the interactions between the interacting variables
 ‘var_out’ and the columns to the interacting variables in ‘var_in’. The 
 values at each cell represent the intensity of the interaction. First, 
 let’s create a matrix with value ‘1’ for all cells:</p>
-<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>weight_in <span class="ot">&lt;-</span> </span>
-<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="fu">ncol</span>(var_out), <span class="fu">ncol</span>(var_in))</span>
-<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(weight_in) <span class="ot">&lt;-</span> <span class="fu">names</span>(var_out)</span>
-<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(weight_in) <span class="ot">&lt;-</span> <span class="fu">names</span>(var_in)</span>
-<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>weight_in</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>weight_in <span class="ot">&lt;-</span> </span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="fu">ncol</span>(var_out), <span class="fu">ncol</span>(var_in))</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(weight_in) <span class="ot">&lt;-</span> <span class="fu">names</span>(var_out)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(weight_in) <span class="ot">&lt;-</span> <span class="fu">names</span>(var_in)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>weight_in</span></code></pre></div>
 <pre><code>##                 mass insular
 ## human_footprint    1       4
 ## pop_dens           2       5
@@ -550,27 +425,27 @@ effect on insular species, and human foot print has an even more intense
  effect on species with high body mass. We can thus assign higher 
 weights to the cells corresponding to the interactions between these 
 variables.</p>
-<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co"># population density with insularity (row 2, column 2)</span></span>
-<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>weight_in[<span class="dv">2</span>,<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a><span class="co"># human footprint with mass  (row 1, column 1)</span></span>
-<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a>weight_in[<span class="dv">1</span>,<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="dv">3</span></span>
-<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a>weight_in</span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># population density with insularity (row 2, column 2)</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>weight_in[<span class="dv">2</span>,<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># human footprint with mass  (row 1, column 1)</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>weight_in[<span class="dv">1</span>,<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>weight_in</span></code></pre></div>
 <pre><code>##                 mass insular
 ## human_footprint    3       4
 ## pop_dens           2       2
 ## inv_range_area     3       6</code></pre>
 <p>We can now run ‘pcpi’, now supplying our weight matrix along the interacting variables.</p>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run function</span></span>
-<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>reptile_pcpi_in_weights <span class="ot">&lt;-</span></span>
-<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
-<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out,</span>
-<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_in =</span> var_in,</span>
-<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">weight_in =</span> weight_in)</span>
-<span id="cb73-7"><a href="#cb73-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb73-8"><a href="#cb73-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the top ranking</span></span>
-<span id="cb73-9"><a href="#cb73-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi_in_weights[<span class="fu">order</span>(reptile_pcpi_in_weights<span class="sc">$</span>rank),])</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run function</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>reptile_pcpi_in_weights <span class="ot">&lt;-</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out,</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_in =</span> var_in,</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">weight_in =</span> weight_in)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the top ranking</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi_in_weights[<span class="fu">order</span>(reptile_pcpi_in_weights<span class="sc">$</span>rank),])</span></code></pre></div>
 <pre><code>##                             sp      pcpi rank
 ## 2151        Casarea dussumieri 1.0000000    1
 ## 3216  Cyrtodactylus jarakensis 0.8554596    2
@@ -579,8 +454,8 @@ variables.</p>
 ## 2556 Cnemidophorus flavissimus 0.4836806    5
 ## 7899     Pholidoscelis atratus 0.4307382    6</code></pre>
 <p>This ranking is similar to the one using interacting variables but no weighting, with only the species on position 6 changing.</p>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi_in_weights<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
-<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi_in_weights<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqAAAAEgCAMAAABcujGyAAAAe1BMVEUAAAAAADoAAGYAOjoAOpAAZrY6AAA6ADo6AGY6OgA6Ojo6kNtmAABmADpmOpBmkJBmtrZmtv+QOgCQOjqQOmaQkGaQkNuQtpCQ2/+2ZgC225C2/7a2///T09PbkDrb25Db/7bb/9vb////tmb/trb/25D//7b//9v///+xorSrAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAO1ElEQVR4nO2dgXajuBVASTb2bOvMdJPtdkOb0mlcO/7/LyxCBoQdQEhP5oHvPbs7PmN4CLgrpIcsZScAxWRzFwBgCAQF1SAoqAZBQTUICqpBUFANgoJqEBRUg6CgGgQF1SAoqAZBQTUICqpBUFANgoJqEBRUg6CgGgQF1SAoqAZBQTUICqpBUFANgoJqEBRUg6CgGgQF1SAoqAZBQTUICqppBD3+w/75+ff3ucoCcEUr6PPO/LHPHhEU9NA+4vfZrrQ028xYGIBLnDboPsuoPkEZbifJ1KEAquj04vfZy1zlAPgSK2jZ9mzgKQ+KIA8KqkFQUE0r6Ocrj3hQRytojpmgj8s3SQCqcAQlxQT6aAT9fOUlJ+jDfRdPFQrqcB7xJOpBH+RBQTUICqppBa2f8TziQRFOov7po9icDlu6SqCITqJ+//RxKsp/AbTQSdQffn2v/gXQgpOo352O398QFFTRtkGLsneU73jEgyqcNFO+MT15OvGgCfKgoJpOGxRAGwy3A9U4o5lofYI+GM0EqqGTBKpBUFBNLWhu8vNF+YSnqwSaOAtaPLyV3aTyP4xmAlXUczNt6p/N5bzqBEVYQfPMhYw9qKGuQXf2CU8NCro4t0Hzx3f7hGcSW1BF04vPMtuPx0/QxLQ8KDPgwY2ZJGhTv9IQgBvh/ux4ZzL1A30kZ0Qe4+7hNnR+dnzYbsy4+j6cEXkMfYLb0BkPauYPG1CPGhRuTkdQM8lyMVA3FvWbetqgcCOcR/zm+Pz0Ub307KUeNEr9CTeiMzfTwxvT2IIuGA8KqmnboN/fqj8H++ejifoMwItgQYc7SWOJeipk8GKqoM54u/7+uUeaCUHBi/AadACPRD2CghfTBfVg7TWoTKNJZYmEGoRygQIE9RipNJ6oX7SgF4SfSyrTxa7u/IECBPVZq3M0UY+gBJLdUXitTgQlkOyOwpOHISiBZHectlbneKLe97j3BBflmoA2qMeUDToT9am6JJCQiYI2U9sN9uIXkWaavwTgQZI8aH+iXlGFJVeC+c/lkvmbjmKB7jdRr1BQAkXseD2B7cAEd0tI1CPoIgIF1KBWun32MpARJVFPIJlA4Wmm8uEd8Ys4BCWQ7I5Xifqy+xPxm+I1CSoGF+WakBrUPthNDdor6AIS9fOXADyIaYP2v1PSmajXVgLwICTNVPWAzIqyffUjaaaZmb/pKBboxon6oHBpUCio4MhioZe6KxWUGjR9oOzfoSDoMhL1ciBowkCTB4vsvJZClEzUqx+EhKAJA6WpQROG02BkKvQJOj/3K+iy7tMVCNq/Yfn8fvrI436ZhKCRIGjvhvuHt8JMvxhl6JoEneWO0wbt29DkkEzyaGBuJo9x9/P/b6xQUH1t0CUKarLwRtChkSKfr2PDSBA0MhCC9m1Y16CDSyH2vaZXlR6SYtmCKn8lFdwGLYYXjN+PrCc/fxtUjoULKhVI7NTCdrwcLPIwOsedzHHFdlwAKxY0GPKgCwVBQzdMHA5BLQjat2H5gBdY4GNNgi47D7q+Nug5yxnXCJ2//lIo6IrboLcfLHJ8jlqFE0EjAyHo0IamEl16DSrHPIJKpS/XJ+hhOzwWVPa4YjumA0FlTy1sR6eTJLHC9poEFWPFggYT8ogvq9Dofvz8gi7c9IW1QcPPM2zDYmDmMNnjiu2YLNA8IOjIhnP14hUKSh7Uo7jB5zl9w3o1RNJM0pFIM0Xs6L5JihwoMum4yUBQ4UBipxa241cbfv4ebOr8gsqBoLKnFrajFkEVmo2gsqcWtiOCpmfFggZzY0H7ssUTIoTumCzQPCCox4aLrkERVDhQovOM2bBf0HQzLC/txXeWJtDSBFXWBl3bDMvhN/HiLooFQlCfDfsEXd38oAjqEUjsaoftOEXQRcywPAUE9Qkk1XrpRvW+R74bntLWoAt78X1PgkoF6kb1vkfNp9EOUNIZlhE0NpL6QN2o3veo+dS7uIdDuqUQF/baBkGnBwq7Tc5gkbiZQSceV2zHmECrFlRd4ivsNjmCxg1VnnjcmB0jrn0irxDUo0Rh97vZsH99OQcdSyHq8wpBPUrUjep9s5tPYxPXndQk6vV5pVFQdYG6Ub1vdv3BYxkaLYl6fV4hqEegblTvm+274Slton7ZfRtBQdU9mRckqJZEvT6v5ARVcJGWK6iWRL0+rxB06qlNFHSOpRDDd9TnVcSDGUHlzjkynNhdvFtBp7BmQRP95GPFXiGoR6BuVO/z+OLvEo2oX7OgUiWS4y4FjUvUI+h4iYahDWpJNKJeoaDqAg2DoJZEI+r16aAv0DDzCCr0lAk8FWpQVYGGQVDLQBs0JlGvTwd9gYZBUEt/Lz4qUb/ivg29+KmnduM8qNdxEXQ8kBxrFjQCBI0LJMc9C3rY9g5tpg0aF2iY+00z+Q0WaTbp3wpB4wINc7+CenLuvFODImjsqSV6xB+fTf8dQRE09tRCBK2e4L0JpDP5wxuCpgs0zH0Luq8W+SjGlvoosh2C0ouPPbXpgn6+WuvysTr0sP0FQRE08tSmC3r8bqvOvmEgLZ+v/b+gR9C4QHKsTtC6Bu0bBjIx3FffBZ+peq80tkGFXmaoEfQ8s0gRtJps38l1N5K6iyt+JTVymSdsKxZIi6AeWfgp4b76Tuou6tNBX4nkAkn9TxxYgkW+i1eng1hVLFYi7YFUCip1F/UJSqBkOzobmgRT70hkgeMuTVBISICgNgF6fPaYJjTsuAgKDSGdJNt9H8+Dhh53aW1QSEhIHtQ+3IsFCCpVFYefyyQIFLFju6HNgB62UY3QmwgaXIJpzH8XVxwopJN02JY1zNhYkYjjIiiBpu+4xDxocAmmMf9dXHEgBI1n/ru44kAhgnoNWI44Lp1vaAgZLOI3YDn8uDfqfMMSCB9uNzpgWea4cN8EJOq9ByyLHFdsx2SBFBZpRYHCa9DBAcvplkKc/5Kli0SgiB2dNuj4gOWESyHOf8nSRSJQxI7Ou/i2S9JTQWpZyOs2gRQWaUWBkuRB+2dYDuluy70zJ1BkILG75h8oStBEMywDNCQRNOVSiHBfpBE04VKIcF8kElTuuHDfzCYogBczCRrM/ImPdJEIJHwEBJWNRCDhIyCobCQCCR8BQWUjEUj1EfxQeMn0FWnFgXyOcHzOnj7yuJlFJMqhJJDCIq04kMcR9g9vxdPH8XkeQxVeMn1FWnGg8SOYF+3mDXvcxA3x5VATSGGRVhxo/AhmqJIRNG5EfXw51ARSWKQVBxo/Ql2Dxv0mCUCWyzZo2BTgAIno9uKjp74BkEVLHhTgSxAUVIOgoBorqMwaNADiUIOCahAUVIOgoJq6DbprmqG0QUER1KCgmnawiMj0iwCyXAl62+F21XyOZnhKPbFj4GjU/Nw+efr4fLUnEDbopd67/LAp/zmFRzq1BfkZ13pyjt9crrgCfTjXK6RAdt+Xy89JyDrHjFAkCDuFTv7wdjrbsA881fYmlvdw0/2biSV6qf+MFtQtyOFb8CCH9vjt5YotUNSYtfMZbTcXn5NwVYPeksO2suHz1VR8G/sx7ExdQX+pXAi8BfVapXlTpHBB3YJICOpcrtgCCQhqFzVwPydh1k5SPUfe/95PkTa4gm6KzSl8rv28eg6aX75EC+oWREJQ53LFFkhC0Or6uJ+TcDnc7pbDld2zEqxBN9U8pqG3wFZT+7bVESGoUxABQWMlcAskIWgnULJx7p0By6foZWgm4f5A73z1Q8dL500D2gSK+WWALYjZO15QpyACgsb+ntEtUB7T4agLZPrT7uckOD/5kFiGZhJdQaO6g50atPr5SvB5mEtdVaMCgrYFUSJoXSCRGvS2gs6QB716xId3BruCmpMIvgXVrwfNRRAQtC2Ijkd8U6AFPuK9lqERpj5Wk9Ppnbl5jAtBT/ku/IrlT/+1KuRnQcO86BZEspMUmItzC7TETpLHMjTSXKeZQnN8l4Ievv0l+BbsH/60NhVNhz6EbkFUpJnaAi0wzTTLmOWqxvx8bbvMx2eBNFP1F+H5iM/Xv9p9bU40D7wa3YLIJeqryxVbIJFE/e7icxJmHizSpLbqZ0QR2LE8/6/18BZpeqcMkW8W3YLECNp2uKMygW6B2usVXqCbvuoE0ImW2e0AvkTL7HYAX6JldjuAL9Eyux3AlzC7HaiG2e1ANcxuB6ohDwqq6bRBAbTR6cUDaMPpJJFfAn1cj2bCU1AEnSRQDYKCahAUVIOgoBoEBdUgKKgGQUE1CAqqQVBQDYKCahAUVIOgoBoEBdUg6C04/uCXiIEgaCj7l2qQ98BAbzPlW2EmVcrt1EqBY8L3dz2SHEEDqW0bFrSaqCV//NeP/2xDNbvznzogaCC+gr6YaT3LR3zUjM93DIKOcfz+h/mVQWEf04dvf27Nh0P536ef9SO+uFqPoPybhz8ezLaP/6wEPZ3aFkGzz6b8+NvzxeyF9gs7s+GLPdAdt2ARdAw7wadZ/cRM01r68lJNRl3bVk0ZdP6yxcx6u89sDVoG+HktqNmnWmTaNFTd2QjOX1Qzj9vP1KAwQNWMtJP+7R/frYfVNICNoM2XzT52su7cClpVgptTV9B6FsHqz4PTQG2+MItamC8QFAapBLFzsJe+NOt8OYI2Xzb7WFnPW53sLxJ3HUHrrdtH/plOmCxD0LkLoB4r6Pknry92Ku8LQbPLebCLS0HLTtLje0fQ85Tg14LWc4UXtvmKoDCMU4Oean++qkFdrmrQHx/ljpNq0OpPHvEIOkpXoWZti04b9FIha1lhBTWe/vhonLZtzrYNeiFo/UXl+J5HPIKOYQWpOtplr+ewLT9Yb9pGZf1lu1NRbeX04n8+b6pN7ZpQmd2nXt614+D5C1t5Vi3Xu540C0HHONtT2ElXDtu/bW1rM7/Ig3ZnZLF5UPuIr1az2TS1ZZb95uZBLwWt86AmwpuxPmLJpxWAoNM4BL2yZLBIMAg6jTBBIRgEncaQoCYhH7h+W8SuKwdBQTUICqpBUFANgoJqEBRUg6CgGgQF1SAoqAZBQTUICqpBUFANgoJqEBRUg6CgGgQF1SAoqAZBQTUICqpBUFANgoJqEBRU83+WZbl6GZm7GwAAAABJRU5ErkJggg=="><!-- --></p>
 <p>Again the overall distribution is similar to the ones before.</p>
 </div>
@@ -596,7 +471,7 @@ threat classification for the algorithm to optimize towards. Here we are
  transform them with numeric values, with the higher values indicating 
 higher threat. Let’s check how the values are ordered in the column 
 ‘iucn_cat’ from the ‘reptile_df’ dataset:</p>
-<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(reptile_df<span class="sc">$</span>iucn_cat)</span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(reptile_df<span class="sc">$</span>iucn_cat)</span></code></pre></div>
 <pre><code>## [1] "CR" "EN" "VU" "NT" "LC" "NE" "DD"</code></pre>
 <p>The factor levels are ordered from more threatened to less 
 threatened, so we have to invert this order before converting to 
@@ -604,17 +479,17 @@ numeric. Also, there are two categories that cannot be ranked (Not
 Evaluated and Data Deficient). Let’s create a new data frame without 
 these two categories and then invert the levels of the variable 
 ‘iucn_cat’ in this new data frame, and finally convert it to numeric.</p>
-<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove 'DD' and 'NE' species</span></span>
-<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>reptile_df_iucn <span class="ot">&lt;-</span></span>
-<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>  reptile_df[<span class="sc">!</span>reptile_df<span class="sc">$</span>iucn_cat <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"DD"</span>, <span class="st">"NE"</span>),]</span>
-<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb78-5"><a href="#cb78-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Change order of levels</span></span>
-<span id="cb78-6"><a href="#cb78-6" aria-hidden="true" tabindex="-1"></a>reptile_df_iucn<span class="sc">$</span>iucn_cat <span class="ot">&lt;-</span> </span>
-<span id="cb78-7"><a href="#cb78-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">factor</span>(reptile_df_iucn<span class="sc">$</span>iucn_cat, </span>
-<span id="cb78-8"><a href="#cb78-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"LC"</span>, <span class="st">"NT"</span>, <span class="st">"VU"</span>, <span class="st">"EN"</span>, <span class="st">"CR"</span>))</span>
-<span id="cb78-9"><a href="#cb78-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb78-10"><a href="#cb78-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert IUCN categories to numeric</span></span>
-<span id="cb78-11"><a href="#cb78-11" aria-hidden="true" tabindex="-1"></a>reptile_df_iucn<span class="sc">$</span>iucn_cat <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(reptile_df_iucn<span class="sc">$</span>iucn_cat)</span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove 'DD' and 'NE' species</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>reptile_df_iucn <span class="ot">&lt;-</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  reptile_df[<span class="sc">!</span>reptile_df<span class="sc">$</span>iucn_cat <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"DD"</span>, <span class="st">"NE"</span>),]</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Change order of levels</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>reptile_df_iucn<span class="sc">$</span>iucn_cat <span class="ot">&lt;-</span> </span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">factor</span>(reptile_df_iucn<span class="sc">$</span>iucn_cat, </span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"LC"</span>, <span class="st">"NT"</span>, <span class="st">"VU"</span>, <span class="st">"EN"</span>, <span class="st">"CR"</span>))</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert IUCN categories to numeric</span></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>reptile_df_iucn<span class="sc">$</span>iucn_cat <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(reptile_df_iucn<span class="sc">$</span>iucn_cat)</span></code></pre></div>
 <p>Now we can create our input data frames from the new subseted data 
 and run function ‘optim_weights’ to optimize the weights. For that, we 
 use the same arguments as function ‘pcpi’, with the addition of the 
@@ -629,39 +504,39 @@ real situations you will probably need more interations (default is
 100). The function will optimize towards increasing the Pearson 
 correlation between the ranks from the reference and from PCPI, and 
 output the tentative correlation scores as it runs.</p>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>var_out_iucn <span class="ot">&lt;-</span> reptile_df_iucn[<span class="dv">6</span><span class="sc">:</span><span class="dv">8</span>]</span>
-<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>var_in_iucn <span class="ot">&lt;-</span> reptile_df_iucn[<span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>]</span>
-<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a>optim_weights_both <span class="ot">&lt;-</span></span>
-<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">optim_weights</span>(<span class="at">sp =</span> reptile_df_iucn<span class="sc">$</span>sp,</span>
-<span id="cb79-6"><a href="#cb79-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">var_out =</span> var_out_iucn,</span>
-<span id="cb79-7"><a href="#cb79-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">var_in =</span> var_in_iucn,</span>
-<span id="cb79-8"><a href="#cb79-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">reference =</span> reptile_df_iucn<span class="sc">$</span>iucn_cat,</span>
-<span id="cb79-9"><a href="#cb79-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">type =</span> <span class="st">"both"</span>,</span>
-<span id="cb79-10"><a href="#cb79-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">control =</span> <span class="fu">list</span>(<span class="at">maxit =</span> <span class="dv">5</span>))</span>
-<span id="cb79-11"><a href="#cb79-11" aria-hidden="true" tabindex="-1"></a><span class="co"># correlation = 0.46971241401417</span></span>
-<span id="cb79-12"><a href="#cb79-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb79-13"><a href="#cb79-13" aria-hidden="true" tabindex="-1"></a>weight_out_opt <span class="ot">&lt;-</span> optim_weights_both<span class="sc">$</span>weight_out</span>
-<span id="cb79-14"><a href="#cb79-14" aria-hidden="true" tabindex="-1"></a>weight_in_opt <span class="ot">&lt;-</span> optim_weights_both<span class="sc">$</span>weight_in</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>var_out_iucn <span class="ot">&lt;-</span> reptile_df_iucn[<span class="dv">6</span><span class="sc">:</span><span class="dv">8</span>]</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>var_in_iucn <span class="ot">&lt;-</span> reptile_df_iucn[<span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>]</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>optim_weights_both <span class="ot">&lt;-</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">optim_weights</span>(<span class="at">sp =</span> reptile_df_iucn<span class="sc">$</span>sp,</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">var_out =</span> var_out_iucn,</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">var_in =</span> var_in_iucn,</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">reference =</span> reptile_df_iucn<span class="sc">$</span>iucn_cat,</span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">type =</span> <span class="st">"both"</span>,</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">control =</span> <span class="fu">list</span>(<span class="at">maxit =</span> <span class="dv">5</span>))</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a><span class="co"># correlation = 0.46971241401417</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>weight_out_opt <span class="ot">&lt;-</span> optim_weights_both<span class="sc">$</span>weight_out</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>weight_in_opt <span class="ot">&lt;-</span> optim_weights_both<span class="sc">$</span>weight_in</span></code></pre></div>
 <p>We can visualize the optimized weights using a barplot for the threat
  variable weights and a tile plot for the interacting variable weights:</p>
-<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>weight_out_df <span class="ot">&lt;-</span> </span>
-<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">out_var =</span> <span class="fu">colnames</span>(var_out),</span>
-<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">weight =</span> weight_out_opt)</span>
-<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb80-5"><a href="#cb80-5" aria-hidden="true" tabindex="-1"></a>weight_in_df <span class="ot">&lt;-</span> </span>
-<span id="cb80-6"><a href="#cb80-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">out_var =</span> <span class="fu">rep</span>(<span class="fu">colnames</span>(var_out), <span class="dv">2</span>),</span>
-<span id="cb80-7"><a href="#cb80-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">in_var =</span> <span class="fu">rep</span>(<span class="fu">colnames</span>(var_in), <span class="at">each =</span> <span class="dv">3</span>),</span>
-<span id="cb80-8"><a href="#cb80-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">weight =</span> <span class="fu">c</span>(weight_in_opt))</span>
-<span id="cb80-9"><a href="#cb80-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb80-10"><a href="#cb80-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(weight_out_df, <span class="fu">aes</span>(out_var, weight)) <span class="sc">+</span></span>
-<span id="cb80-11"><a href="#cb80-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>) <span class="sc">+</span></span>
-<span id="cb80-12"><a href="#cb80-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>weight_out_df <span class="ot">&lt;-</span> </span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">out_var =</span> <span class="fu">colnames</span>(var_out),</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">weight =</span> weight_out_opt)</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>weight_in_df <span class="ot">&lt;-</span> </span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">out_var =</span> <span class="fu">rep</span>(<span class="fu">colnames</span>(var_out), <span class="dv">2</span>),</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">in_var =</span> <span class="fu">rep</span>(<span class="fu">colnames</span>(var_in), <span class="at">each =</span> <span class="dv">3</span>),</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">weight =</span> <span class="fu">c</span>(weight_in_opt))</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(weight_out_df, <span class="fu">aes</span>(out_var, weight)) <span class="sc">+</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
 <p><img src="data:image/png;base64,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"><!-- --></p>
-<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(weight_in_df, </span>
-<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> in_var, <span class="at">y =</span> out_var, <span class="at">fill =</span> weight)) <span class="sc">+</span></span>
-<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
-<span id="cb81-4"><a href="#cb81-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(weight_in_df, </span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> in_var, <span class="at">y =</span> out_var, <span class="at">fill =</span> weight)) <span class="sc">+</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
 <p><img src="data:image/png;base64,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"><!-- -->
  The optimization increased the weights for human footprint, but 
 decreased the weights for the other variables. It decreased the weight 
@@ -669,14 +544,14 @@ of the interactions of all threat variables with insularity and
 increased the weights for mass, with a greater magnitude in the case of 
 range area. We can now use the new weights to calculate PCPI for every 
 species (including DD and NE species we had excluded before):</p>
-<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>reptile_pcpi_opt <span class="ot">&lt;-</span></span>
-<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
-<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out,</span>
-<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_in =</span> var_in,</span>
-<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">weight_out =</span> weight_out_opt,</span>
-<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">weight_in =</span> weight_in_opt)</span>
-<span id="cb82-7"><a href="#cb82-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb82-8"><a href="#cb82-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi_opt[<span class="fu">order</span>(reptile_pcpi_opt<span class="sc">$</span>rank),])</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>reptile_pcpi_opt <span class="ot">&lt;-</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pcpi</span>(<span class="at">sp =</span> reptile_df<span class="sc">$</span>sp,</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_out =</span> var_out,</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">var_in =</span> var_in,</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">weight_out =</span> weight_out_opt,</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">weight_in =</span> weight_in_opt)</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(reptile_pcpi_opt[<span class="fu">order</span>(reptile_pcpi_opt<span class="sc">$</span>rank),])</span></code></pre></div>
 <pre><code>##                             sp       pcpi rank
 ## 8726 Ramphotyphlops hatmaliyeb 1.00000000    1
 ## 9539       Spondylurus monitae 0.04104750    2
@@ -685,8 +560,8 @@ species (including DD and NE species we had excluded before):</p>
 ## 3216  Cyrtodactylus jarakensis 0.01969485    5
 ## 1715        Bothrops insularis 0.01179807    6</code></pre>
 <p>The rank changes once again, with similar composition, but a different order.</p>
-<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi_opt<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
-<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(reptile_pcpi_opt<span class="sc">$</span>rank<span class="sc">~</span>reptile_df<span class="sc">$</span>iucn_cat, </span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">outline =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <p><img src="data:image/png;base64,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"><!-- --></p>
 </div>
 
